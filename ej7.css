@@ -1,0 +1,77 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color:rgb(35, 112, 35);
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 40px 20px;
+
+h1 {
+    text-align:left;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fcfcfc;
+    text-shadow: black 5px 5px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.blanco {
+    border:black 10px solid;
+    text-align: justify;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 10px;
+    background-color: hwb(0 100% 0%);
+    color: rgb(0, 0, 0);
+}
+
+.rojo {
+    border:rgb(133, 24, 24) 10px solid;
+    text-align: justify;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 50%;
+    padding: 10px;
+    background-color: hwb(19 20% 33%);
+    color: rgb(255, 255, 255);
+}
+
+.amarillo {
+    border:rgb(104, 80, 16) 10px solid;
+    text-align: justify;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 50%;
+    padding: 10px;
+    background-color: hwb(41 20% 34%);
+    color: rgb(255, 255, 255);
+}
+.azul {
+    border:rgb(100, 115, 255) 5px dashed;
+    text-align: justify;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 10px;
+    background-color: hwb(231 11% 29%);
+    color: rgb(255, 255, 255);
+}
+
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .bio, .quote {
+        font-size: 15px;
+    }
+}
