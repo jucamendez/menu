@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Contenedor principal para las 5 columnas */
+.contenedor-principal {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+/* Estilos para las fichas */
+.ficha {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 0;
+  flex: 1;
+  min-width: 0; /* Permite que se ajusten correctamente */
+}
+
+.p1 {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.p2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  color: #333;
+}
+
+.p3 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+  text-align: justify;
+}
