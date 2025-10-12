@@ -1,0 +1,46 @@
+html {
+    background-color: hwb(35 50% 15%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 125%;
+    text-align: left;
+    hyphens: auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 10px;
+    padding: 10px;
+}
+
+article {
+    flex: 1 1 0;
+    min-width: 250px;
+    margin: 1px;
+    border: 3px solid black;
+    background-color: hwb(35 70% 5%);
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: lightgray;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+p {
+    padding: 0%;
+}
+
+@media (max-width: 800px) {
+    section {
+        flex-wrap: wrap; 
+    }
+
+    article {
+        flex: 1 1 100%;
+    }
+}
