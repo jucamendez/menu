@@ -1,0 +1,80 @@
+/* Modelo de caja general */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #f44336;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #b71c1c;
+}
+
+/* Sección de contenido */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 500px;
+}
+
+iframe {
+  width: 80%;
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Animación deslizante */
+@keyframes slideAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sliding-element {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  animation-name: slideAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  margin: 20px auto;
+}
