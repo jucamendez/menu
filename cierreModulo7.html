@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biografía</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Biografía</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#biografia">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Destacado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Redes sociales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid bg-light text-center py-5">
+        <h1 class="display-4">Hola soy Juca</h1>
+        <p class="lead">Estudiante, jugador de Fútbol Americano Colegial y futuro programador</p>
+        <a href="#biografia" class="btn btn-primary btn-lg">Conóceme</a>
+    </header>
+
+    <section id="biografia" class="container my-5">
+        <h2 class="text-center mb-4">Mi Historia</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="americano.JPEG" width="400" height="400" class="img-fluid rounded" alt="Foto personal">
+            </div>
+            <div class="col-md-6">
+                <p>Soy originario de Toluca, Edo. Mex, desde pequeño fui apasionado por varias cosas, entre ellas los videojuegos y los deportes, siempre he sido una persona activa, yo lo 
+                    llamo un intento de atleta con un hobbie llamado Universidad.
+                </p>
+                <p>En el ámbito tecnológico me voy por la Inteligencia Artificial y todo lo que conlleva, me intriga bastante el hecho de hasta donde puede llegar y la ayuda que puede proporcionar al ser humano.</p>
+                <p>Actualmente curso el tercer semestre de la carrera de Ing. en Tecnologías de la información en la Universidad Poitécnica de San Luis Potosí.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Momentos destacados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mvp.jpg" width="215" height="280" alt="MVP">
+                    <div class="card-body">
+                        <h5 class="card-title">MVP Semana 2 FBA</h5>
+                        <p class="card-text">MVP Ofensivo en contra de Forajidos de Zacatecas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="voli.jpg" width="340" height="280" alt="MVP">
+                    <div class="card-body">
+                        <h5 class="card-title">Voleibol playero</h5>
+                        <p class="card-text">El día en el que les hice el partido a unos gringos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="theweeknd.jpg" width="230" height="280" alt="The Weeknd">
+                    <div class="card-body">
+                        <h5 class="card-title">The Weeknd</h5>
+                        <p class="card-text">Uno de los mejores conciertos que  he vivido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Redes Sociales -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Mis Redes Sociales</h2>
+        <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.instagram.com/juca_mendez24" target="_blank" class="text-decoration-none text-dark">
+                <i class="bi bi-instagram fs-2"></i>
+            </a>
+            <a href="https://github.com/jucamendez" target="_blank" class="text-decoration-none text-dark">
+                <i class="bi bi-github fs-2"></i>
+            </a>
+            <a href="https://www.facebook.com/juancarlos.mendezmanjarrez" target="_blank" class="text-decoration-none text-dark">
+                <i class="bi bi-facebook fs-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Contáctame</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="bg-light text-center py-4">
+        <p>© 2025 [Juan Carlos Méndez Manjarrez] - Todos los derechos reservados</p>
+        <a href="https://jucamendez.github.io/menu/cierreModulo7.html" target="_blank"> </a>
+    </footer>
+</body>
+</html>
