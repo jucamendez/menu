@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //la salida de este código va a un alert
+        alert("Bienvenido");
+        let num = parseInt(prompt("Numero para imprimir su tabla"));
+        let mensaje = "";
+        let ans=0;
+
+        for (let i = 1; i < 10; i++) {
+                res =i*num;
+                mensaje += `${num} x ${i} = ${res} \n`;
+            }
+        alert(mensaje);
+         //la salida de este código va al dom 
+        for (let i = 1; i < 10; i++) {
+                res =i*num;
+                mensaje += `${num} x ${i} = ${res} \n`;
+                document.write("<p>"+mensaje+"</p>");
+            }
+        //la salida de este código va al console.log
+        for(let i=0;i<veces;i++){ 
+            mensaje =`Hola, ${nombre}! 🌟 \n`;
+            console.log(mensaje);
+        }
+        let height = 180;
+        let anotherHeight = height;
+        let weight;
+        console.log(height); // -> 180
+        console.log(anotherHeight); // -> 180
+        weight = 70;
+        console.log(weight); // -> 70
+    </script>
+</body>
+<a href="https://jucamendez.github.io/menu/ej20P3.html" target="_blank"></a>
+<button onclick="window.location.href='Pfinal.html'">Volver al menú</button>
+</html>

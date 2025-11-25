@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                
+        // Pedir datos al usuario
+        const num = parseFloat(prompt("Ingresa el primer número: "));
+        let resultado;
+        let mensaje ="";
+
+        let ans =0;
+
+        document.write("<table border=1>");
+        for(let i=0;i<10;i++){
+            res = (i+1)*num;
+
+            //operacion
+            mensaje = `${num} x ${i+1} = ${res}`;
+
+            //salida en todos lados (consola,alerta y en el dom)
+            console.log(mensaje)
+            alert(mensaje);
+        }
+        document.write("<table border=1>");
+        
+        for(let i=0;i<10;i++){
+            document.write("<tr>");
+            res=(i+1)*num;
+            mensaje = `${num} x ${i+1} = `;    
+            document.write("<td>"+mensaje+"</td");
+            mensaje= `${res}`;
+            document.write("<td>"+mensaje+"</td>");
+            document.write("</tr>");
+
+        }
+
+        document.write("</table");
+
+
+
+    </script>
+</body>
+</html>

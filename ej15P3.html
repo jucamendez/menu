@@ -1,0 +1,27 @@
+
+<html>
+<body>
+<h1>JavaScript if .. else</h1>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+
+if (hour < 18) {
+  greeting = " La hora es: "+hour+ ". Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+<a href="https://jucamendez.github.io/menu/ej15P3.html" target="_blank"></a>
+<button onclick="window.location.href='Pfinal.html'">Volver al menú</button>
+</html>

@@ -1,6 +1,7 @@
 :root {
     --primary-color: #3498db;
     --secondary-color: #2c3e50;
+    --third-color: violet;
     --accent-color: #e74c3c;
 }
 
@@ -54,6 +55,17 @@ body {
     margin-bottom: 30px;
 }
 
+.btn-third {
+    background-color: var(--third-color);
+    border-color: var(--third-color);
+}
+
+.btn-third:hover {
+ background-color: rgb(178, 45, 178);
+    border-color: rgb(178, 45, 178);
+}
+
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -83,16 +95,20 @@ footer {
 
 /* Estilos para el portafolio del parcial 3 */
 .parcial-3-container {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     background-color: white;
     border-radius: 10px;
     padding: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .adjustable-section {
-    transition: all 0.3s ease;
+     transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .size-controls {
@@ -122,11 +138,13 @@ footer {
 }
 
 .content-box {
+    position: relative;
+    padding-bottom: 0.5rem;
     border: 1px solid #dee2e6;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .layout-option {
@@ -154,7 +172,6 @@ footer {
     margin-bottom: 15px;
 }
 
-/* Estilos para el layout de lista */
 .project-list .content-box {
     width: 100%;
     margin-bottom: 15px;
